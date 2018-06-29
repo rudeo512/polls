@@ -1,4 +1,4 @@
-package com.caru.polls.model;
+package com.caru.polls.core.role;
 
 /**
  * RoleName

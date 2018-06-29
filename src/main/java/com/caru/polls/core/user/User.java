@@ -1,4 +1,4 @@
-package com.caru.polls.model;
+package com.caru.polls.core.user;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -19,7 +19,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.NaturalId;
 
-import com.caru.polls.model.audit.DateAudit;
+import com.caru.polls.core.role.Role;
+import com.caru.polls.core.audit.DateAudit;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

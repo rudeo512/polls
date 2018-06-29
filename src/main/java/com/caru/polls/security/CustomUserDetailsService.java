@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.caru.polls.model.User;
-import com.caru.polls.repository.UserRepository;
+import com.caru.polls.core.user.User;
+import com.caru.polls.core.user.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 
 /**

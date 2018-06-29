@@ -1,12 +1,9 @@
-package com.caru.polls.repository;
+package com.caru.polls.core.role;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import com.caru.polls.model.Role;
-import com.caru.polls.model.RoleName;
 
 /**
  * RoleRepository

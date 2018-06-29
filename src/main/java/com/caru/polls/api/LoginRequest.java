@@ -1,4 +1,4 @@
-package com.caru.polls.payload;
+package com.caru.polls.api;
 
 import javax.validation.constraints.NotBlank;
 

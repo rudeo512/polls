@@ -1,4 +1,4 @@
-package com.caru.polls.model.audit;
+package com.caru.polls.core.audit;
 
 import java.io.Serializable;
 import java.time.Instant;

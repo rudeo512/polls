@@ -1,4 +1,4 @@
-package com.caru.polls.controller;
+package com.caru.polls.api.controller;
 
 import java.net.URI;
 import java.util.Collections;
@@ -19,16 +19,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.caru.polls.api.ApiResponse;
+import com.caru.polls.core.role.Role;
+import com.caru.polls.core.role.RoleName;
+import com.caru.polls.core.role.RoleRepository;
+import com.caru.polls.core.user.User;
+import com.caru.polls.core.user.UserRepository;
 import com.caru.polls.exception.AppException;
-import com.caru.polls.model.Role;
-import com.caru.polls.model.RoleName;
-import com.caru.polls.model.User;
-import com.caru.polls.payload.ApiResponse;
-import com.caru.polls.payload.JwtAuthenticationResponse;
-import com.caru.polls.payload.LoginRequest;
-import com.caru.polls.payload.SignUpRequest;
-import com.caru.polls.repository.RoleRepository;
-import com.caru.polls.repository.UserRepository;
+import com.caru.polls.api.JwtAuthenticationResponse;
+import com.caru.polls.api.LoginRequest;
+import com.caru.polls.api.SignUpRequest;
 import com.caru.polls.security.JwtTokenProvider;
 
 /**
