@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * UserPrincipal
@@ -22,6 +23,7 @@ import lombok.NoArgsConstructor;
  * @since 2018. 06. 29.
  */
 
+@Slf4j
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -45,6 +47,8 @@ public class UserPrincipal implements UserDetails {
 		List<GrantedAuthority> authorities = user.getRoles().stream().map(role ->
 			new SimpleGrantedAuthority(role.getName().name())
 		).collect(Collectors.toList());
+
+		log.info("authorities == {}", authorities);
 
 		return new UserPrincipal(
 			user.getId(),

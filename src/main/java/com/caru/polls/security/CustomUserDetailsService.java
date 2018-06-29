@@ -35,8 +35,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 				new UsernameNotFoundException("User not found with username or email : " + usernameOrEmail)
 			);
 
-		log.info("user == {}", user);
-		log.info("userPrincipal", UserPrincipal.create(user));
+		log.info("user1 == {}", user);
 		return UserPrincipal.create(user);
 	}
 
@@ -47,6 +46,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 			() -> new UsernameNotFoundException("User not found with id : " + id)
 		);
 
+		log.info("user2 == {}", user);
 		return UserPrincipal.create(user);
 	}
 }
