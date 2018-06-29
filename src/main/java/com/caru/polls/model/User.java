@@ -21,9 +21,8 @@ import org.hibernate.annotations.NaturalId;
 
 import com.caru.polls.model.audit.DateAudit;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 /**
  * User
@@ -42,10 +41,9 @@ import lombok.Setter;
 		"email"
 	})
 })
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class User extends DateAudit {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
