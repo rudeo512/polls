@@ -1,4 +1,4 @@
-package com.caru.polls.api;
+package com.caru.polls.api.response.jwt;
 
 import lombok.Data;
 

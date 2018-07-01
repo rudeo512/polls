@@ -19,8 +19,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.NaturalId;
 
-import com.caru.polls.core.role.Role;
 import com.caru.polls.core.audit.DateAudit;
+import com.caru.polls.core.role.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

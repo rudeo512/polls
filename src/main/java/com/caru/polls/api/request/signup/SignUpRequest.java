@@ -1,4 +1,4 @@
-package com.caru.polls.api;
+package com.caru.polls.api.request.signup;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

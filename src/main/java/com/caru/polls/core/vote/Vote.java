@@ -10,8 +10,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-import com.caru.polls.core.choice.Choice;
 import com.caru.polls.core.audit.DateAudit;
+import com.caru.polls.core.choice.Choice;
 import com.caru.polls.core.poll.Poll;
 import com.caru.polls.core.user.User;
 import lombok.AllArgsConstructor;

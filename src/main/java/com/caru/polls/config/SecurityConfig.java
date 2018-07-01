@@ -17,8 +17,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.caru.polls.security.CustomUserDetailsService;
-import com.caru.polls.security.JwtAuthenticationFilter;
 import com.caru.polls.security.JwtAuthenticationEntryPoint;
+import com.caru.polls.security.JwtAuthenticationFilter;
 
 /**
  * SecurityConfig

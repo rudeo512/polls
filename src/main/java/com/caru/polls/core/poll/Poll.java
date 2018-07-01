@@ -20,8 +20,8 @@ import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import com.caru.polls.core.choice.Choice;
 import com.caru.polls.core.audit.UserDateAudit;
+import com.caru.polls.core.choice.Choice;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
